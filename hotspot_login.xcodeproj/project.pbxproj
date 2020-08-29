@@ -3,11 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7DBF30024DAF8270076D03B /* print.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF2FF24DAF8270076D03B /* print.swift */; };
+		A7DBF30324DB035D0076D03B /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30224DB035D0076D03B /* URLRequest.swift */; };
+		A7DBF30524DB07C50076D03B /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30424DB07C50076D03B /* URL.swift */; };
+		A7DBF30724DB12840076D03B /* WIFIonICEStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30624DB12840076D03B /* WIFIonICEStrategy.swift */; };
+		A7DBF30924DB12A20076D03B /* LoginStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30824DB12A20076D03B /* LoginStrategy.swift */; };
+		A7DBF30B24DB12E20076D03B /* CaptivePortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30A24DB12E20076D03B /* CaptivePortal.swift */; };
+		A7DBF30D24DB14D40076D03B /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30C24DB14D40076D03B /* Shell.swift */; };
+		A7DBF31024DB199D0076D03B /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = A7DBF30F24DB199D0076D03B /* SwiftSoup */; };
+		A7DBF31424F55DE50076D03B /* MeinHotspotStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF31324F55DE50076D03B /* MeinHotspotStrategy.swift */; };
+		A7DBF31624FAC19A0076D03B /* WiFi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF31524FAC19A0076D03B /* WiFi.swift */; };
 		EE111ECA2121B02A00D02145 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE111EC92121B02A00D02145 /* main.swift */; };
+		EE111ED12121C2B200D02145 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE111ED02121C2B200D02145 /* HTTP.swift */; };
+		EE111ED32121C2F900D02145 /* DefaultLoginStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE111ED22121C2F900D02145 /* DefaultLoginStrategy.swift */; };
+		EE111ED52121C38600D02145 /* HotspotLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE111ED42121C38600D02145 /* HotspotLogin.swift */; };
+		EE111ED72121C45B00D02145 /* SyncHTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE111ED62121C45B00D02145 /* SyncHTTP.swift */; };
+		EE482D6022E0C48600CBF277 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE482D5F22E0C48600CBF277 /* Command.swift */; };
+		EE4F18F622DB6064003B90AF /* RedirectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4F18F522DB6064003B90AF /* RedirectionHandler.swift */; };
+		EE4F18F822DB8A3F003B90AF /* DNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4F18F722DB8A3F003B90AF /* DNS.swift */; };
+		EEC5FEF822B19508004CF757 /* Synchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC5FEF622B17F25004CF757 /* Synchronizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +41,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A7DBF2FF24DAF8270076D03B /* print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = print.swift; sourceTree = "<group>"; };
+		A7DBF30224DB035D0076D03B /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		A7DBF30424DB07C50076D03B /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		A7DBF30624DB12840076D03B /* WIFIonICEStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIFIonICEStrategy.swift; sourceTree = "<group>"; };
+		A7DBF30824DB12A20076D03B /* LoginStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStrategy.swift; sourceTree = "<group>"; };
+		A7DBF30A24DB12E20076D03B /* CaptivePortal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptivePortal.swift; sourceTree = "<group>"; };
+		A7DBF30C24DB14D40076D03B /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
+		A7DBF31324F55DE50076D03B /* MeinHotspotStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeinHotspotStrategy.swift; sourceTree = "<group>"; };
+		A7DBF31524FAC19A0076D03B /* WiFi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFi.swift; sourceTree = "<group>"; };
 		EE111EC62121B02A00D02145 /* hotspot_login */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hotspot_login; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE111EC92121B02A00D02145 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EE111ED02121C2B200D02145 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		EE111ED22121C2F900D02145 /* DefaultLoginStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginStrategy.swift; sourceTree = "<group>"; };
+		EE111ED42121C38600D02145 /* HotspotLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotLogin.swift; sourceTree = "<group>"; };
+		EE111ED62121C45B00D02145 /* SyncHTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncHTTP.swift; sourceTree = "<group>"; };
+		EE482D5C22E0C01500CBF277 /* hotspot_login-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hotspot_login-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE482D5F22E0C48600CBF277 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		EE4F18F522DB6064003B90AF /* RedirectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectionHandler.swift; sourceTree = "<group>"; };
+		EE4F18F722DB8A3F003B90AF /* DNS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNS.swift; sourceTree = "<group>"; };
+		EEC5FEF622B17F25004CF757 /* Synchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,12 +68,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7DBF31024DB199D0076D03B /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7DBF30124DB03530076D03B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7DBF30424DB07C50076D03B /* URL.swift */,
+				A7DBF30224DB035D0076D03B /* URLRequest.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EE111EBD2121B02A00D02145 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +104,49 @@
 			isa = PBXGroup;
 			children = (
 				EE111EC92121B02A00D02145 /* main.swift */,
+				EE111ED42121C38600D02145 /* HotspotLogin.swift */,
+				A7DBF30A24DB12E20076D03B /* CaptivePortal.swift */,
+				EE4F18F222DB5FA1003B90AF /* Strategies */,
+				EE4F18F322DB6029003B90AF /* Networking */,
+				EE4F18F422DB6030003B90AF /* Tools */,
+				A7DBF30124DB03530076D03B /* Extensions */,
 			);
 			path = hotspot_login;
+			sourceTree = "<group>";
+		};
+		EE4F18F222DB5FA1003B90AF /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				A7DBF30824DB12A20076D03B /* LoginStrategy.swift */,
+				EE111ED22121C2F900D02145 /* DefaultLoginStrategy.swift */,
+				A7DBF31324F55DE50076D03B /* MeinHotspotStrategy.swift */,
+				A7DBF30624DB12840076D03B /* WIFIonICEStrategy.swift */,
+			);
+			path = Strategies;
+			sourceTree = "<group>";
+		};
+		EE4F18F322DB6029003B90AF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EE4F18F722DB8A3F003B90AF /* DNS.swift */,
+				EE111ED02121C2B200D02145 /* HTTP.swift */,
+				EE111ED62121C45B00D02145 /* SyncHTTP.swift */,
+				A7DBF30C24DB14D40076D03B /* Shell.swift */,
+				EE4F18F522DB6064003B90AF /* RedirectionHandler.swift */,
+				EE482D5C22E0C01500CBF277 /* hotspot_login-Bridging-Header.h */,
+				A7DBF31524FAC19A0076D03B /* WiFi.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EE4F18F422DB6030003B90AF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EE482D5F22E0C48600CBF277 /* Command.swift */,
+				EEC5FEF622B17F25004CF757 /* Synchronizer.swift */,
+				A7DBF2FF24DAF8270076D03B /* print.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +165,9 @@
 			dependencies = (
 			);
 			name = hotspot_login;
+			packageProductDependencies = (
+				A7DBF30F24DB199D0076D03B /* SwiftSoup */,
+			);
 			productName = hotspot_login;
 			productReference = EE111EC62121B02A00D02145 /* hotspot_login */;
 			productType = "com.apple.product-type.tool";
@@ -94,6 +184,7 @@
 				TargetAttributes = {
 					EE111EC52121B02A00D02145 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -105,6 +196,9 @@
 				en,
 			);
 			mainGroup = EE111EBD2121B02A00D02145;
+			packageReferences = (
+				A7DBF30E24DB199D0076D03B /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = EE111EC72121B02A00D02145 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -119,7 +213,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE111ED32121C2F900D02145 /* DefaultLoginStrategy.swift in Sources */,
+				A7DBF30024DAF8270076D03B /* print.swift in Sources */,
+				A7DBF30924DB12A20076D03B /* LoginStrategy.swift in Sources */,
+				A7DBF30724DB12840076D03B /* WIFIonICEStrategy.swift in Sources */,
+				EE4F18F822DB8A3F003B90AF /* DNS.swift in Sources */,
 				EE111ECA2121B02A00D02145 /* main.swift in Sources */,
+				EE111ED12121C2B200D02145 /* HTTP.swift in Sources */,
+				EE111ED72121C45B00D02145 /* SyncHTTP.swift in Sources */,
+				EE482D6022E0C48600CBF277 /* Command.swift in Sources */,
+				A7DBF30B24DB12E20076D03B /* CaptivePortal.swift in Sources */,
+				A7DBF30324DB035D0076D03B /* URLRequest.swift in Sources */,
+				EE111ED52121C38600D02145 /* HotspotLogin.swift in Sources */,
+				EE4F18F622DB6064003B90AF /* RedirectionHandler.swift in Sources */,
+				EEC5FEF822B19508004CF757 /* Synchronizer.swift in Sources */,
+				A7DBF30D24DB14D40076D03B /* Shell.swift in Sources */,
+				A7DBF31424F55DE50076D03B /* MeinHotspotStrategy.swift in Sources */,
+				A7DBF31624FAC19A0076D03B /* WiFi.swift in Sources */,
+				A7DBF30524DB07C50076D03B /* URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -232,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -244,8 +355,19 @@
 		EE111ECE2121B02A00D02145 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JGMFM42JM6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "hotspot_login/Networking/hotspot_login-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -253,8 +375,18 @@
 		EE111ECF2121B02A00D02145 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JGMFM42JM6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "hotspot_login/Networking/hotspot_login-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -281,6 +413,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A7DBF30E24DB199D0076D03B /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A7DBF30F24DB199D0076D03B /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7DBF30E24DB199D0076D03B /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE111EBE2121B02A00D02145 /* Project object */;
 }

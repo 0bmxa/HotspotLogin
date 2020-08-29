@@ -6,7 +6,18 @@
 //  Copyright © 2018 0bmxa. All rights reserved.
 //
 
-import Foundation
+func main() {
+    let hotspotLogin = HotspotLogin()
+    hotspotLogin.attemptLogin()
+}
+main()
 
-print("Hello, World!")
 
+
+//import Foundation
+//
+//let res = SyncHTTP.call(urlRequest: "https://deepl.com/".url!.request, followRedirects: true, timeOut: 10)
+//
+//if case let .text(head, body) = res {
+//    Swift.print(body)
+//}
