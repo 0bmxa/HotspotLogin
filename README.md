@@ -52,6 +52,7 @@ If this causes any security issues I don't know about, I'm happy to hear about i
 ## ToDo
 
 - [ ] Allow the user to modify the form data (see above)
+- [ ] Daemon mode: Auto run when connecting to WiFis
 - [ ] IPv6 support
 - [ ] "Complex" DNS support (like `CNAME` results)
 - [ ] Find out if the certificate handling has issues (see above)
