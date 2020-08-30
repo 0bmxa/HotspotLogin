@@ -50,7 +50,7 @@
 		A7DBF30C24DB14D40076D03B /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 		A7DBF31324F55DE50076D03B /* MeinHotspotStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeinHotspotStrategy.swift; sourceTree = "<group>"; };
 		A7DBF31524FAC19A0076D03B /* WiFi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFi.swift; sourceTree = "<group>"; };
-		EE111EC62121B02A00D02145 /* hotspot-login */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "hotspot-login"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE111EC62121B02A00D02145 /* hotspotlogin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hotspotlogin; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE111EC92121B02A00D02145 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EE111ED02121C2B200D02145 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		EE111ED22121C2F900D02145 /* DefaultLoginStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginStrategy.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		EE111EC72121B02A00D02145 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE111EC62121B02A00D02145 /* hotspot-login */,
+				EE111EC62121B02A00D02145 /* hotspotlogin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 				A7DBF30F24DB199D0076D03B /* SwiftSoup */,
 			);
 			productName = hotspot_login;
-			productReference = EE111EC62121B02A00D02145 /* hotspot-login */;
+			productReference = EE111EC62121B02A00D02145 /* hotspotlogin */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -366,9 +366,9 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_NAME = "hotspot-login";
+				PRODUCT_NAME = hotspotlogin;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "hotspot_login/Networking/hotspot_login-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HotspotLogin/Networking/hotspot_login-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
@@ -387,9 +387,9 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_NAME = "hotspot-login";
+				PRODUCT_NAME = hotspotlogin;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "hotspot_login/Networking/hotspot_login-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HotspotLogin/Networking/hotspot_login-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
