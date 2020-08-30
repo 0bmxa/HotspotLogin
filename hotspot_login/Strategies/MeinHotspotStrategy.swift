@@ -19,7 +19,7 @@ struct MeinHotspotStrategy: LoginStrategy {
     ]
     
     func login() -> Bool {
-        guard let macAddress = WiFi.macAddress else {
+        guard let macAddress = WiFi.shared?.macAddress else {
             log(.debug, "MAC address unavailable.")
             return false
         }

@@ -10,15 +10,29 @@ import Foundation
 import CoreWLAN
 
 struct WiFi {
-    private static let wifiClient = CWWiFiClient()
+    internal static var shared = WiFi()
     
-    static var macAddress: String? {
-        let interface = self.wifiClient.interface()
-        return interface?.hardwareAddress()
+    private let client: CWWiFiClient
+    private let interface: CWInterface
+    
+    private init?() {
+        self.client = CWWiFiClient()
+        guard let interface = client.interface() else {
+            log(.error, "No WiFi interface")
+            return nil
+        }
+        self.interface = interface
     }
     
-    static var SSID: String? {
-        let interface = self.wifiClient.interface()
-        return interface?.ssid()
+    var isConnected: Bool {
+        return self.interface.interfaceMode() != .none
+    }
+    
+    var macAddress: String? {
+        return self.interface.hardwareAddress()
+    }
+    
+    var SSID: String? {
+        return self.interface.ssid()
     }
 }

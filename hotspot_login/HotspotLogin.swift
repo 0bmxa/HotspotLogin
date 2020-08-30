@@ -8,15 +8,16 @@
 
 struct HotspotLogin {
     func attemptLogin() {
-        let SSID = WiFi.SSID
-        if let SSID = SSID {
-            log(.warn, "SSID:", SSID)
-        } else {
-            log(.warn, "No SSID.")
+        guard let wifi = WiFi.shared, wifi.isConnected == true else {
+            log(.error, "Not connected to WiFi.")
+            return
         }
+        
+        let SSID = wifi.SSID
+        log(.debug, "SSID:", SSID ?? "–")
 
         let strategyClass = self.strategyForSSID(SSID: SSID)
-        log(.debug, "Using: \(strategyClass)")
+        log(.debug, "Using:", strategyClass)
         
         let strategy = strategyClass.init()
         

@@ -131,10 +131,10 @@
 				EE4F18F722DB8A3F003B90AF /* DNS.swift */,
 				EE111ED02121C2B200D02145 /* HTTP.swift */,
 				EE111ED62121C45B00D02145 /* SyncHTTP.swift */,
+				A7DBF31524FAC19A0076D03B /* WiFi.swift */,
 				A7DBF30C24DB14D40076D03B /* Shell.swift */,
 				EE4F18F522DB6064003B90AF /* RedirectionHandler.swift */,
 				EE482D5C22E0C01500CBF277 /* hotspot_login-Bridging-Header.h */,
-				A7DBF31524FAC19A0076D03B /* WiFi.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
