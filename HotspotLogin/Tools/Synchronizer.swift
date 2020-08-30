@@ -1,8 +1,8 @@
 //
 //  Synchronizer.swift
-//  hotspot_login
+//  HotspotLogin
 //
-//  Created by mxa on 12.06.2019.
+//  Created by 0bmxa on 12.06.2019.
 //  Copyright © 2019 0bmxa. All rights reserved.
 //
 

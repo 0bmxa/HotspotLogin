@@ -1,8 +1,8 @@
 //
 //  WiFi.swift
-//  hotspot_login
+//  HotspotLogin
 //
-//  Created by mayxe on 29.08.20.
+//  Created by 0bmxa on 29.08.20.
 //  Copyright © 2020 0bmxa. All rights reserved.
 //
 

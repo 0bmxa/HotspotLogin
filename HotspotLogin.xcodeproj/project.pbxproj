@@ -50,7 +50,7 @@
 		A7DBF30C24DB14D40076D03B /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 		A7DBF31324F55DE50076D03B /* MeinHotspotStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeinHotspotStrategy.swift; sourceTree = "<group>"; };
 		A7DBF31524FAC19A0076D03B /* WiFi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFi.swift; sourceTree = "<group>"; };
-		EE111EC62121B02A00D02145 /* hotspot_login */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hotspot_login; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE111EC62121B02A00D02145 /* hotspot-login */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "hotspot-login"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE111EC92121B02A00D02145 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EE111ED02121C2B200D02145 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		EE111ED22121C2F900D02145 /* DefaultLoginStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginStrategy.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		EE111EBD2121B02A00D02145 = {
 			isa = PBXGroup;
 			children = (
-				EE111EC82121B02A00D02145 /* hotspot_login */,
+				EE111EC82121B02A00D02145 /* HotspotLogin */,
 				EE111EC72121B02A00D02145 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,12 +95,12 @@
 		EE111EC72121B02A00D02145 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE111EC62121B02A00D02145 /* hotspot_login */,
+				EE111EC62121B02A00D02145 /* hotspot-login */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE111EC82121B02A00D02145 /* hotspot_login */ = {
+		EE111EC82121B02A00D02145 /* HotspotLogin */ = {
 			isa = PBXGroup;
 			children = (
 				EE111EC92121B02A00D02145 /* main.swift */,
@@ -111,7 +111,7 @@
 				EE4F18F422DB6030003B90AF /* Tools */,
 				A7DBF30124DB03530076D03B /* Extensions */,
 			);
-			path = hotspot_login;
+			path = HotspotLogin;
 			sourceTree = "<group>";
 		};
 		EE4F18F222DB5FA1003B90AF /* Strategies */ = {
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE111EC52121B02A00D02145 /* hotspot_login */ = {
+		EE111EC52121B02A00D02145 /* HotspotLogin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE111ECD2121B02A00D02145 /* Build configuration list for PBXNativeTarget "hotspot_login" */;
+			buildConfigurationList = EE111ECD2121B02A00D02145 /* Build configuration list for PBXNativeTarget "HotspotLogin" */;
 			buildPhases = (
 				EE111EC22121B02A00D02145 /* Sources */,
 				EE111EC32121B02A00D02145 /* Frameworks */,
@@ -164,12 +164,12 @@
 			);
 			dependencies = (
 			);
-			name = hotspot_login;
+			name = HotspotLogin;
 			packageProductDependencies = (
 				A7DBF30F24DB199D0076D03B /* SwiftSoup */,
 			);
 			productName = hotspot_login;
-			productReference = EE111EC62121B02A00D02145 /* hotspot_login */;
+			productReference = EE111EC62121B02A00D02145 /* hotspot-login */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -188,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EE111EC12121B02A00D02145 /* Build configuration list for PBXProject "hotspot_login" */;
+			buildConfigurationList = EE111EC12121B02A00D02145 /* Build configuration list for PBXProject "HotspotLogin" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -204,7 +204,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EE111EC52121B02A00D02145 /* hotspot_login */,
+				EE111EC52121B02A00D02145 /* HotspotLogin */,
 			);
 		};
 /* End PBXProject section */
@@ -366,7 +366,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "hotspot-login";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "hotspot_login/Networking/hotspot_login-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -387,7 +387,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "hotspot-login";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "hotspot_login/Networking/hotspot_login-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -397,7 +397,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE111EC12121B02A00D02145 /* Build configuration list for PBXProject "hotspot_login" */ = {
+		EE111EC12121B02A00D02145 /* Build configuration list for PBXProject "HotspotLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE111ECB2121B02A00D02145 /* Debug */,
@@ -406,7 +406,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE111ECD2121B02A00D02145 /* Build configuration list for PBXNativeTarget "hotspot_login" */ = {
+		EE111ECD2121B02A00D02145 /* Build configuration list for PBXNativeTarget "HotspotLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE111ECE2121B02A00D02145 /* Debug */,
