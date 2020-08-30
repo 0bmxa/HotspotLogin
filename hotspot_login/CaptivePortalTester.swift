@@ -1,5 +1,5 @@
 //
-//  CaptivePortal.swift
+//  CaptivePortalTester.swift
 //  hotspot_login
 //
 //  Created by mayxe on 05.08.20.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct CaptivePortal {
+struct CaptivePortalTester {
     static func getURL() -> URL? {
-        let response = SyncHTTP.call(urlRequest: PortalTester.apple, followRedirects: false, timeOut: 10)
+        let response = SyncHTTP.call(urlRequest: PortalTestRequest.apple, followRedirects: false, timeOut: 10)
         
         switch response {
         case .raw(let headers, _),
@@ -21,7 +21,7 @@ struct CaptivePortal {
             log(.error, error.localizedDescription)
             
         case .timeOut:
-            log(.error, "Request timed out. Are you on slow network?")
+            log(.error, "Request timed out.")
         }
         
         return nil
@@ -29,8 +29,8 @@ struct CaptivePortal {
 }
 
 
-enum PortalTester {
-    /// A HTTP HEAD request to captive.apple.com (IP based)
+enum PortalTestRequest {
+    /// A HTTP HEAD request to captive.apple.com
     static let apple: URLRequest = {
         let url = URL(string: "http://17.253.55.203/")!
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 15)
@@ -39,13 +39,7 @@ enum PortalTester {
         return request
     }()
     
-    //    static let applle: URLRequest = {
-    //        var request = URLRequest(url: "http://captive.apple.com/", usingIP: "17.253.55.203")
-    //        request.httpMethod = "HEAD"
-    //        return request
-    //    }()
-    
-    /// A HTTP HEAD request to NeverSSL.com (IP based)
+    /// A HTTP HEAD request to NeverSSL.com
     static let neverssl: URLRequest = {
         let url = URL(string: "http://13.35.254.141/")!
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 15)

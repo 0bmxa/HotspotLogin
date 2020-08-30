@@ -9,17 +9,19 @@
 struct HotspotLogin {
     func attemptLogin() {
         let SSID = WiFi.SSID
-        if SSID == nil {
-            log(.warn, "SSID unknown.")
+        if let SSID = SSID {
+            log(.warn, "SSID:", SSID)
+        } else {
+            log(.warn, "No SSID.")
         }
-        
+
         let strategyClass = self.strategyForSSID(SSID: SSID)
-        log(.info, "SSID: \(SSID ?? "–"); Using: \(strategyClass)")
+        log(.debug, "Using: \(strategyClass)")
         
         let strategy = strategyClass.init()
         
         let success = strategy.login()
-        log(.info, success ? "Logged in." : "Login was not successful.")
+        log(success ? .info : .error, success ? "Logged in." : "Login was not successful.")
     }
 
     private func strategyForSSID(SSID: String?) -> LoginStrategy.Type {

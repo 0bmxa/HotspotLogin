@@ -50,7 +50,7 @@ struct DefaultLoginStrategy: LoginStrategy {
         // Looking for a HTTP redirect URL
         log(.info, "Looking for captive portal...")
         
-        guard let captivePortalURL = CaptivePortal.getURL() else {
+        guard let captivePortalURL = CaptivePortalTester.getURL() else {
             log(.info, "No captive portal found.")
             return nil
         }

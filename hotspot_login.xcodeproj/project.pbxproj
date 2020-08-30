@@ -12,7 +12,7 @@
 		A7DBF30524DB07C50076D03B /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30424DB07C50076D03B /* URL.swift */; };
 		A7DBF30724DB12840076D03B /* WIFIonICEStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30624DB12840076D03B /* WIFIonICEStrategy.swift */; };
 		A7DBF30924DB12A20076D03B /* LoginStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30824DB12A20076D03B /* LoginStrategy.swift */; };
-		A7DBF30B24DB12E20076D03B /* CaptivePortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30A24DB12E20076D03B /* CaptivePortal.swift */; };
+		A7DBF30B24DB12E20076D03B /* CaptivePortalTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30A24DB12E20076D03B /* CaptivePortalTester.swift */; };
 		A7DBF30D24DB14D40076D03B /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30C24DB14D40076D03B /* Shell.swift */; };
 		A7DBF31024DB199D0076D03B /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = A7DBF30F24DB199D0076D03B /* SwiftSoup */; };
 		A7DBF31424F55DE50076D03B /* MeinHotspotStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF31324F55DE50076D03B /* MeinHotspotStrategy.swift */; };
@@ -46,7 +46,7 @@
 		A7DBF30424DB07C50076D03B /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		A7DBF30624DB12840076D03B /* WIFIonICEStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIFIonICEStrategy.swift; sourceTree = "<group>"; };
 		A7DBF30824DB12A20076D03B /* LoginStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStrategy.swift; sourceTree = "<group>"; };
-		A7DBF30A24DB12E20076D03B /* CaptivePortal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptivePortal.swift; sourceTree = "<group>"; };
+		A7DBF30A24DB12E20076D03B /* CaptivePortalTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptivePortalTester.swift; sourceTree = "<group>"; };
 		A7DBF30C24DB14D40076D03B /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 		A7DBF31324F55DE50076D03B /* MeinHotspotStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeinHotspotStrategy.swift; sourceTree = "<group>"; };
 		A7DBF31524FAC19A0076D03B /* WiFi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFi.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			children = (
 				EE111EC92121B02A00D02145 /* main.swift */,
 				EE111ED42121C38600D02145 /* HotspotLogin.swift */,
-				A7DBF30A24DB12E20076D03B /* CaptivePortal.swift */,
+				A7DBF30A24DB12E20076D03B /* CaptivePortalTester.swift */,
 				EE4F18F222DB5FA1003B90AF /* Strategies */,
 				EE4F18F322DB6029003B90AF /* Networking */,
 				EE4F18F422DB6030003B90AF /* Tools */,
@@ -223,7 +223,7 @@
 				EE111ED12121C2B200D02145 /* HTTP.swift in Sources */,
 				EE111ED72121C45B00D02145 /* SyncHTTP.swift in Sources */,
 				EE482D6022E0C48600CBF277 /* Command.swift in Sources */,
-				A7DBF30B24DB12E20076D03B /* CaptivePortal.swift in Sources */,
+				A7DBF30B24DB12E20076D03B /* CaptivePortalTester.swift in Sources */,
 				A7DBF30324DB035D0076D03B /* URLRequest.swift in Sources */,
 				EE111ED52121C38600D02145 /* HotspotLogin.swift in Sources */,
 				EE4F18F622DB6064003B90AF /* RedirectionHandler.swift in Sources */,

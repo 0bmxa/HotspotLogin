@@ -10,7 +10,7 @@ import Foundation
 
 struct Shell {
     /// `ipconfig getpacket en0`
-    static func dnsServerFromDHCPLease() -> String? {
+    static var dnsServerFromDHCPLease: String? {
         let commandResult = Command.runSync("ipconfig getpacket en0")
         let lines = commandResult.stdoutLines() { $0.contains("domain_name_server") }
         
@@ -20,7 +20,7 @@ struct Shell {
     }
     
     /// `route -n get default`
-    static func defaultGateway() -> String? {
+    static var defaultGateway: String? {
         let commandResult = Command.runSync("route -n get default")
         let lines = commandResult.stdoutLines() { $0.contains("gateway:") }
         

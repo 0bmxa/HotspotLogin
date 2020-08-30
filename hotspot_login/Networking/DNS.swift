@@ -16,16 +16,23 @@ class DNS {
     
     let server: IP
     private var cache: [HostName: IP] = [:]
+    private let fallbackServer = "9.9.9.9"
     
     private init() {
-        if let server = Shell.dnsServerFromDHCPLease() {
+        if let server = Shell.dnsServerFromDHCPLease {
             self.server = server
             log(.debug, "Using DNS server:", self.server)
             return
         }
         
-        self.server = Shell.defaultGateway()!
-        log(.info, "Using default gateway as DNS server:", self.server)
+        if let defaultGateway = Shell.defaultGateway {
+            self.server = defaultGateway
+            log(.info, "Using default gateway as DNS server:", self.server)
+            return
+        }
+        
+        self.server = self.fallbackServer
+        log(.warn, "No local DNS nor gateway found. Falling back to", self.server)
     }
     
     func resolve(host: HostName) -> IP? {
