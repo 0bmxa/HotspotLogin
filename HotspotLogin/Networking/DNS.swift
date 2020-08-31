@@ -36,7 +36,7 @@ class DNS {
     }
     
     func resolve(host: HostName) -> IP? {
-        guard !self.isIP(host: host) else { return host }
+        guard !host.isIP else { return host }
         
         let allIPs = self.resolveAll(host: host)
         if let IP = allIPs?.first {
@@ -57,13 +57,15 @@ class DNS {
         
         return resolvedIPs
     }
-    
-    private func isIP(host: HostName) -> Bool {
-        let isIPv4 = host.range(of: #"^\d+\.\d+\.\d+\.\d+$"#, options: .regularExpression) != nil
+}
 
+extension HostName {
+    var isIP: Bool {
+        let isIPv4 = self.range(of: #"^\d+\.\d+\.\d+\.\d+$"#, options: .regularExpression) != nil
+        
         // FIXME: well well well...
-        let isIPv6 = host.range(of: #":.*:"#, options: .regularExpression) != nil
-
+        let isIPv6 = self.range(of: #":.*:"#, options: .regularExpression) != nil
+        
         return isIPv4 || isIPv6
     }
 }

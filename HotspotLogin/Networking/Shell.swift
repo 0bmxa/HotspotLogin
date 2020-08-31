@@ -32,27 +32,17 @@ struct Shell {
     static func dig(hostName: String, dnsServer: String) -> [String]? {
 //        let commandResult = Command.runSync("dig +nostats +nocomments +nocmd \(hostName) @\(dnsServer)")
         let commandResult = Command.runSync("dig +noall +answer -t A \(hostName) @\(dnsServer)")
-        let lines = commandResult.stdoutLines() { !$0.starts(with: ";") }
+        let _lines = commandResult.stdoutLines() { !$0.starts(with: ";") }
         
-        guard lines != nil else {
+        guard let lines = _lines, lines.count > 0 else {
             let allLines = commandResult.stdoutLines()
             allLines?.forEach {
-                log(.info, "dig:", $0)
+                log(.debug, "dig:", $0)
             }
             return nil
         }
         
-        let resolvedIPs = lines?.compactMap { $0.components(separatedBy: .whitespaces).last }
+        let resolvedIPs = lines.compactMap { $0.components(separatedBy: .whitespaces).last }
         return resolvedIPs
-    }
-    
-    /// `airport -I`
-    static func getSSID() -> String? {
-        let commandString = "/System/Library/PrivateFrameworks/Apple80211.framework/Resources/airport -I"
-        let commandResult = Command.runSync(commandString)
-        let lines = commandResult.stdoutLines() { $0.contains("SSID:") }
-        
-        let ssid = lines?.first?.components(separatedBy: .whitespaces).last
-        return ssid
-    }
+    }    
 }

@@ -30,12 +30,13 @@ extension URLRequest {
     mutating func replaceHostWithIP() {
         // TODO: check if already IP
         guard let url = self.url, let hostName = url.host else { fatalError() }
+        guard !hostName.isIP else { return }
 
-        if let hostHeader = self.value(forHTTPHeaderField: "Host") {
-            log(.warn, "Host header already present:", hostHeader)
+        if let oldHostHeader = self.value(forHTTPHeaderField: "Host"), oldHostHeader != hostName {
+            log(.warn, "Replacing Host header '\(oldHostHeader)' with '\(hostName)'")
         }
         
-        guard let hostIP = DNS.shared.resolve(host: hostName) else { assertionFailure(); return }
+        guard let hostIP = DNS.shared.resolve(host: hostName) else { return }
 
         // Replace hostname with the IP in URL
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
