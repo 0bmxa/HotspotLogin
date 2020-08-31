@@ -11,7 +11,7 @@ import SwiftSoup
 
 struct DefaultLoginStrategy: LoginStrategy {
     func login() -> Bool {
-        guard let portalURL = self.detectPortal() else { return false }
+        guard let portalURL = self.detectPortal() else { exit(0) }
         
         log(.info, "Loading captive portal page...")
         let portalRequest = URLRequest(url: portalURL)

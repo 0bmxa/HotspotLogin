@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7DBF30024DAF8270076D03B /* print.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF2FF24DAF8270076D03B /* print.swift */; };
+		A7B98A4624FCEC7C00E9A4FA /* Colorizer in Frameworks */ = {isa = PBXBuildFile; productRef = A7B98A4524FCEC7C00E9A4FA /* Colorizer */; };
+		A7DBF30024DAF8270076D03B /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF2FF24DAF8270076D03B /* Log.swift */; };
 		A7DBF30324DB035D0076D03B /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30224DB035D0076D03B /* URLRequest.swift */; };
 		A7DBF30524DB07C50076D03B /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30424DB07C50076D03B /* URL.swift */; };
 		A7DBF30724DB12840076D03B /* WIFIonICEStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBF30624DB12840076D03B /* WIFIonICEStrategy.swift */; };
@@ -41,7 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A7DBF2FF24DAF8270076D03B /* print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = print.swift; sourceTree = "<group>"; };
+		A7DBF2FF24DAF8270076D03B /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		A7DBF30224DB035D0076D03B /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
 		A7DBF30424DB07C50076D03B /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		A7DBF30624DB12840076D03B /* WIFIonICEStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIFIonICEStrategy.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7B98A4624FCEC7C00E9A4FA /* Colorizer in Frameworks */,
 				A7DBF31024DB199D0076D03B /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,7 +146,7 @@
 			children = (
 				EE482D5F22E0C48600CBF277 /* Command.swift */,
 				EEC5FEF622B17F25004CF757 /* Synchronizer.swift */,
-				A7DBF2FF24DAF8270076D03B /* print.swift */,
+				A7DBF2FF24DAF8270076D03B /* Log.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -167,6 +169,7 @@
 			name = HotspotLogin;
 			packageProductDependencies = (
 				A7DBF30F24DB199D0076D03B /* SwiftSoup */,
+				A7B98A4524FCEC7C00E9A4FA /* Colorizer */,
 			);
 			productName = hotspot_login;
 			productReference = EE111EC62121B02A00D02145 /* hotspotlogin */;
@@ -199,6 +202,7 @@
 			mainGroup = EE111EBD2121B02A00D02145;
 			packageReferences = (
 				A7DBF30E24DB199D0076D03B /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				A7B98A4424FCEC7C00E9A4FA /* XCRemoteSwiftPackageReference "Colorizer" */,
 			);
 			productRefGroup = EE111EC72121B02A00D02145 /* Products */;
 			projectDirPath = "";
@@ -215,7 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE111ED32121C2F900D02145 /* DefaultLoginStrategy.swift in Sources */,
-				A7DBF30024DAF8270076D03B /* print.swift in Sources */,
+				A7DBF30024DAF8270076D03B /* Log.swift in Sources */,
 				A7DBF30924DB12A20076D03B /* LoginStrategy.swift in Sources */,
 				A7DBF30724DB12840076D03B /* WIFIonICEStrategy.swift in Sources */,
 				EE4F18F822DB8A3F003B90AF /* DNS.swift in Sources */,
@@ -418,6 +422,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A7B98A4424FCEC7C00E9A4FA /* XCRemoteSwiftPackageReference "Colorizer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getGuaka/Colorizer";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
 		A7DBF30E24DB199D0076D03B /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scinfu/SwiftSoup";
@@ -429,6 +441,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A7B98A4524FCEC7C00E9A4FA /* Colorizer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7B98A4424FCEC7C00E9A4FA /* XCRemoteSwiftPackageReference "Colorizer" */;
+			productName = Colorizer;
+		};
 		A7DBF30F24DB199D0076D03B /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A7DBF30E24DB199D0076D03B /* XCRemoteSwiftPackageReference "SwiftSoup" */;

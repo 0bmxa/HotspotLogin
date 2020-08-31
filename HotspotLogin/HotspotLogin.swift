@@ -14,10 +14,10 @@ struct HotspotLogin {
         }
         
         let SSID = wifi.SSID
-        log(.debug, "SSID:", SSID ?? "–")
+        log(.info, "SSID:", SSID ?? "–")
 
         let strategyClass = self.strategyForSSID(SSID: SSID)
-        log(.debug, "Using:", strategyClass)
+        log(.info, "Using:", strategyClass)
         
         let strategy = strategyClass.init()
         

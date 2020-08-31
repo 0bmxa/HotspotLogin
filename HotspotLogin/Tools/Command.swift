@@ -21,6 +21,7 @@ struct Command {
     /// - Parameter args: The arguments of the command to be executed, including the command itself.
     /// - Returns: The returned stdout and stderr strings, if applicable.
     static func runSync(_ command: String) -> CommandResult {
+        log(.debug, "Running command:", command)
         // Setup process
         let process = Process()
         process.launchPath = "/usr/bin/env"
